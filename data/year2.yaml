@@ -1,0 +1,59 @@
+modules:
+  - id: "IN2002"
+    name: "Data Structures and Algorithms"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "Viva"
+          weight: 30
+          mark: null
+        - name: "Exam"
+          weight: 70
+          mark: null
+  - id: "IN2013"
+    name: "Object-Oriented Analysis and Design"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "Coursework (Analysis)"
+          weight: 45
+          mark: null
+        - name: "Coursework (Design)"
+          weight: 45
+          mark: null
+        - name: "MCQ"
+          weight: 10
+          grading_mechanism: "top-4"
+          quizzes:
+            - name: "Quiz 1"
+              mark: null
+            - name: "Quiz 2"
+              mark: null
+            - name: "Quiz 3"
+              mark: null
+            - name: "Quiz 4"
+              mark: null
+            - name: "Quiz 5"
+              mark: null
+  - id: "IN2015"
+    name: "Professional Development in IT"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "Presentation"
+          weight: 40
+          mark: null
+        - name: "Summary"
+          weight: 60
+          mark: null
+  - id: "IN2029"
+    name: "Programming in C++"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "Program"
+          weight: 30
+          mark: null
+        - name: "Exam"
+          weight: 70
+          mark: null

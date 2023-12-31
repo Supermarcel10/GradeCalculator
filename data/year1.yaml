@@ -1,0 +1,140 @@
+modules:
+  - id: "IN1002"
+    name: "Introduction to Algorithms"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Coursework"
+          weight: 50
+        - name: "Exam"
+          weight: 50
+          mark: null
+  - id: "IN1006"
+    name: "Systems Architecture"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "MCQ"
+          quizzes:
+            - name: "Quiz 1"
+              weight: 2.5
+              mark: null
+            - name: "Quiz 2"
+              weight: 5
+              mark: null
+            - name: "Quiz 3"
+              weight: 5
+              mark: null
+            - name: "Quiz 4"
+              weight: 5
+              mark: null
+            - name: "Quiz 5"
+              weight: 5
+              mark: null
+            - name: "Quiz 6"
+              weight: 5
+              mark: null
+            - name: "Quiz 7"
+              weight: 2.5
+              mark: null
+      - name: "Exam"
+        weight: 70
+        mark: null
+  - id: "IN1007"
+    name: "Programming in Java"
+    credits: 30
+    assessments:
+      - term 1:
+        - name: "MCQ"
+          weight: 20
+          mark: null
+        - name: "Viva"
+          weight: 60
+          mark: null
+        - name: "Coursework"
+          weight: 20
+          mark: null
+      - term 2:
+        - name: "MCQ"
+          weight: 20
+          grading_mechanism: "top-2"
+          quizzes:
+            - name: "Quiz 1"
+              mark: null
+            - name: "Quiz 2"
+              mark: null
+            - name: "Quiz 3"
+              mark: null
+            - name: "Quiz 4"
+              mark: null
+        - name: "Project (Milestone 1)"
+          weight: 40
+          mark: null
+        - name: "Project (Milestone 2)"
+          weight: 40
+          mark: null
+  - id: "IN1011"
+    name: "Operating Systems"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "MCQ"
+          weight: 32
+          bonus_mechanism: "2^(n-5)/8"
+          quizzes:
+            - name: "Quiz 1"
+              mark: null
+            - name: "Quiz 2"
+              mark: null
+            - name: "Quiz 3"
+              mark: null
+            - name: "Quiz 4"
+              mark: null
+            - name: "Quiz 5"
+              mark: null
+            - name: "Quiz 6"
+              mark: null
+            - name: "Quiz 7"
+              mark: null
+            - name: "Quiz 8"
+              mark: null
+        - name: "Exam"
+          weight: 60
+          mark: null
+  - id: "IN1012"
+    name: "Ethics"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Final Grade"
+          weight: 100
+          mark: null
+  - id: "IN1013"
+    name: "Databases"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "Design"
+          weight: 50
+          mark: null
+        - name: "SQL"
+          weight: 50
+          mark: null
+  - id: "IN1014"
+    name: "Mathematics for Computing"
+    credits: 15
+    assessments:
+      - term 1:
+        - name: "MCQ"
+          weight: 30
+          grading_mechanism: "top-2"
+          quizzes:
+            - name: "Quiz 1"
+              mark: null
+            - name: "Quiz 2"
+              mark: null
+            - name: "Quiz 3"
+              mark: null
+        - name: "Exam"
+          weight: 70
+          mark: null
