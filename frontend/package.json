@@ -9,9 +9,13 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
+	"overrides": {
+		"nth-check": "2.1.1",
+		"postcss": "8.4.32"
+	},
   "scripts": {
     "start": "npm install && react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
   },
   "eslintConfig": {
     "extends": [
