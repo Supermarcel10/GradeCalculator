@@ -1,0 +1,31 @@
+@import "_vars.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--dark);
+  color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: .3rem .1rem;
+}
+
+#caption {
+  color: var(--bright);
+  font-size: 0.3rem;
+  font-style: italic;
+  font-weight: 100;
+  margin: -.3rem .1rem .6rem;
+}

@@ -1,0 +1,19 @@
+table {
+	width: 80vw;
+	border-collapse: collapse;
+	border: 1px solid #555;
+	margin: .6rem auto;
+}
+
+th, td {
+	padding: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+
+table .total {
+	background-color: var(--ternary);
+}
+
+table .total .text {
+	text-align: right;
+}

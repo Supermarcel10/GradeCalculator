@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
+import './css/style.css';
+import Table from "./components/Table";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
 		<p id="caption">So you can show off to your friends!</p>
 		<br/>
 
-		{/*TODO: Calculator*/}
+		{/*/!*TODO: Calculator*!/*/}
+		{/*<Table />*/}
   </React.StrictMode>
 );

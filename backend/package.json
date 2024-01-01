@@ -1,0 +1,14 @@
+{
+  "name": "grade-calculator-backend",
+  "version": "1.0.0",
+  "description": "",
+	"author": "Supermarcel10",
+	"private": true,
+	"dependencies": {
+		"express": "^4.18.2",
+		"js-yaml": "^4.1.0"
+	},
+  "scripts": {
+    "start": "npm install && react-scripts start"
+  }
+}
