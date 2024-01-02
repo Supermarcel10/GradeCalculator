@@ -14,5 +14,7 @@ root.render(
 
 		{/*Table*/}
 		<Table />
+
+		<br/>
   </React.StrictMode>
 );

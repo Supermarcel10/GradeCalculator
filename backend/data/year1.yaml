@@ -6,6 +6,7 @@ modules:
       - term 2:
         - name: "Coursework"
           weight: 50
+          mark: null
         - name: "Exam"
           weight: 50
           mark: null

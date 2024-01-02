@@ -9,7 +9,7 @@ app.use(cors());
 
 app.get('/api/table', (req, res) => {
 	try {
-		const yamlData = fs.readFileSync('data/year2.yaml', 'utf8');
+		const yamlData = fs.readFileSync('data/year1.yaml', 'utf8');
 		const parsedData = yaml.load(yamlData);
 		res.json(parsedData);
 	} catch (error) {

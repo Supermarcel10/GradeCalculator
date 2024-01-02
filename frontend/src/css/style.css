@@ -18,8 +18,8 @@
 }
 
 html {
-  background-color: var(--dark);
-  color: #fff;
+  background-color: var(--background);
+  color: var(--text);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   font-family: "Montserrat", sans-serif;
@@ -34,7 +34,7 @@ h1 {
 }
 
 #caption {
-  color: var(--bright);
+  color: var(--assignment);
   font-size: 0.4rem;
   font-style: italic;
   font-weight: 200;
