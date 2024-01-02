@@ -12,7 +12,7 @@ root.render(
 		<p id="caption">So you can show off to your friends!</p>
 		<br/>
 
-		{/*/!*TODO: Calculator*!/*/}
-		{/*<Table />*/}
+		{/*Table*/}
+		<Table />
   </React.StrictMode>
 );

@@ -1,19 +1,49 @@
-table {
-	width: 80vw;
+#calculator {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	width: max(80%, 600px);
 	border-collapse: collapse;
 	border: 1px solid #555;
-	margin: .6rem auto;
+	margin: 0 auto;
 }
 
-th, td {
-	padding: 1rem;
-	border-bottom: 1px solid #ccc;
+#calculator > thead > tr > th {
+	background: var(--ternary);
+	font-weight: 700;
 }
 
-table .total {
+#calculator .module {
+	background-color: var(--secondary);
+}
+
+.assignments {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+	border-top: 5px solid #555;
+	border-bottom: 5px solid #555;
+}
+
+.assignments thead > tr {
+  background-color: var(--primary);
+}
+
+.term {
+  background-color: var(--primary);
+	font-weight: 500;
+}
+
+.assignments tbody tr:not(.term) {
+	background-color: var(--bright);
+	color: var(--dark);
+}
+
+#calculator tfoot tr {
 	background-color: var(--ternary);
+	font-weight: 500;
 }
 
-table .total .text {
+#calculator .grand-total-text {
 	text-align: right;
 }
