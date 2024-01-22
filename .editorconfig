@@ -10,7 +10,7 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{js,ts,jsx,tsx,css,html}]
+[*.{js,ts,jsx,tsx,css,html,yaml}]
 indent_size = 2
 
 [package.json]
