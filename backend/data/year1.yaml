@@ -38,9 +38,10 @@ modules:
             - name: "Quiz 7"
               weight: 2.5
               mark: null
-      - name: "Exam"
-        weight: 70
-        mark: null
+        - name: "Exam"
+          weight: 70
+          mark: null
+
   - id: "IN1007"
     name: "Programming in Java"
     credits: 30
@@ -81,6 +82,7 @@ modules:
       - term 2:
         - name: "MCQ"
           weight: 32
+          bonus_weight: 8
           bonus_mechanism: "2^(n-5)/8"
           quizzes:
             - name: "Quiz 1"
