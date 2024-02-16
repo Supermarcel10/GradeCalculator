@@ -1,0 +1,42 @@
+@import "_vars.css";
+
+* {
+	-webkit-user-select: none;  /* Safari */
+	-moz-user-select: none;     /* Firefox */
+	-ms-user-select: none;      /* IE10+/Edge */
+	user-select: none;          /* Standard syntax */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.selectable {
+	-webkit-user-select: text;  /* Safari */
+	-moz-user-select: text;     /* Firefox */
+	-ms-user-select: text;      /* IE10+/Edge */
+	user-select: text;          /* Standard syntax */
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: .3rem .1rem;
+}
+
+#caption {
+  color: var(--assignment);
+  font-size: 0.4rem;
+  font-style: italic;
+  font-weight: 200;
+  margin: -.3rem .1rem;
+}

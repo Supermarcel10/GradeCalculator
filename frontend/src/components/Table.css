@@ -1,0 +1,104 @@
+#calculator {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	width: max(80%, 600px);
+	border-collapse: collapse;
+	border: max(2px, .1vh) solid #555;
+	margin: 0 auto;
+}
+
+#calculator > thead > tr > th {
+	background: var(--heading);
+	color: var(--heading-text);
+	font-weight: 500;
+}
+
+.module {
+	background: var(--module);
+	color: var(--module-text);
+}
+
+.module:not(:first-of-type) {
+  border-top: 1px solid var(--module-border);
+}
+
+.assignment:not(:first-of-type) {
+	border-top: 1px solid var(--assignment-border);
+}
+
+.sub-assignments > tbody > tr:not(:first-of-type) {
+	border-top: 1px solid var(--sub-assignment-border);
+}
+
+.module:hover {
+	cursor: pointer;
+}
+
+.module.active {
+	background: var(--module-active);
+}
+
+.assignments {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.assignments > thead > tr {
+  background: var(--assignment-heading);
+	color: var(--assignment-heading-text);
+	font-weight: 300;
+}
+
+.term {
+  background: var(--term);
+	color: var(--term-text);
+	font-weight: 400;
+}
+
+.assignment {
+	background: var(--assignment);
+	color: var(--assignment-text);
+}
+
+.sub-assignments {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+	background: var(--sub-assignment);
+	color: var(--sub-assignment-text);
+}
+
+#calculator tfoot tr {
+	background: var(--heading);
+	color: var(--heading-text);
+	font-weight: 500;
+}
+
+#calculator .grand-total-text {
+	text-align: right;
+}
+
+.mark-input {
+	height: 100%;
+	width: 100%;
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	text-align: center;
+	border: 0;
+	background: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.hidden {
+	display: none;
+}
