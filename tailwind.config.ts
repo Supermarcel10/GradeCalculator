@@ -16,10 +16,10 @@ const config: Config = {
     },
   },
 	plugins: [
-		require("daisyui"),
 		require("tailwindcss-flip"),
 		require("tailwindcss-animate"),
-		require('@tailwindcss/aspect-ratio')
+		require('@tailwindcss/aspect-ratio'),
+		require("daisyui")
 	],
 };
 export default config;
