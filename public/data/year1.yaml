@@ -1,3 +1,7 @@
+university: "City University of London"
+degree: "BSc"
+course: "Computer Science"
+year: 1
 modules:
   - id: "IN1002"
     name: "Introduction to Algorithms"
