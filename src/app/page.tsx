@@ -4,9 +4,9 @@ import React, {useState} from "react";
 
 
 export default function Home() {
-	const [university, setUniversity] = useState<string>("");
-	const [degree, setDegree] = useState<string>("");
-	const [course, setCourse] = useState<string>("");
+	const [university, setUniversity] = useState<string>("None");
+	const [degree, setDegree] = useState<string>("None");
+	const [course, setCourse] = useState<string>("None");
 
   return (
 	<div>
@@ -19,7 +19,7 @@ export default function Home() {
 					<span className="label-text">University</span>
 				</div>
 				<select className="select select-bordered" value={university} onChange={(e) => setUniversity(e.target.value)}>
-					<option disabled selected>Pick one</option>
+					<option disabled>None</option>
 					<option>City University of London</option>
 				</select>
 			</label>
@@ -29,7 +29,7 @@ export default function Home() {
 					<span className="label-text">Degree</span>
 				</div>
 				<select className="select select-bordered" value={degree} onChange={(e) => setDegree(e.target.value)}>
-					<option disabled selected>Pick one</option>
+					<option disabled>None</option>
 					<option>BSc</option>
 				</select>
 			</label>
@@ -39,7 +39,7 @@ export default function Home() {
 					<span className="label-text">Course</span>
 				</div>
 				<select className="select select-bordered" value={course} onChange={(e) => setCourse(e.target.value)}>
-					<option disabled selected>Pick one</option>
+					<option disabled>None</option>
 					<option>Computer Science</option>
 				</select>
 			</label>
