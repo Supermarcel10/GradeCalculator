@@ -1,5 +1,6 @@
 "use client";
 
+import MainContent from "@/components/MainContent";
 import React, {useState} from "react";
 
 
@@ -44,6 +45,8 @@ export default function Home() {
 				</select>
 			</label>
 		</div>
+
+		<MainContent course={course == "None" ? null : course} degree={degree == "None" ? null : degree} university={university == "None" ? null : university}/>
 	</div>
   );
 }
