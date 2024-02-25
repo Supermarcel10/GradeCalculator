@@ -20,11 +20,11 @@ const Assessments: React.FC<AssessmentsProps> = ({ assessments }) => {
 		};
 	});
 
-  return (
-	  <div className="flex flex-col gap-2">
+	return (
+		<div className="flex flex-col gap-2">
 			{remappedAssessments.map((assessment, index) => (
 				<div className="collapse bg-primary/10">
-					<input type="radio" name="assessment-accordion" />
+					<input type="radio" name="assessment-accordion" disabled={assessment.quizzes.length === 0} style={{cursor: assessment.quizzes.length === 0 ? "default" : "pointer"}} />
 					<div className="collapse-title text-xl font-medium flex justify-between">
 						<p><span className="text-primary/80">T{assessment.term}</span> <span>{assessment.name}</span></p>
 						<p className={getMarkColor(assessment.mark)}>{assessment.mark}%</p>
