@@ -14,8 +14,8 @@ export default function Home() {
 		<h1 className="text-center font-bold text-4xl pt-8">Grade Calculator</h1>
 		<p className="text-center italic pb-12">So you can show off to your friends!</p>
 
-		<div className="mx-auto flex flex-col md:flex-row gap-4 md:gap-8 md:px-8 pb-16 items-center justify-center">
-			<label className="form-control w-3/5 md:w-full md:max-w-xs">
+		<div className="mx-auto flex flex-col lg:flex-row gap-4 lg:gap-8 lg:px-8 pb-16 items-center justify-center">
+			<label className="form-control w-3/5 md:w-full md:max-w-md">
 				<div className="label">
 					<span className="label-text">University</span>
 				</div>
@@ -26,7 +26,7 @@ export default function Home() {
 				</select>
 			</label>
 
-			<label className="form-control w-3/5 md:w-full md:max-w-xs">
+			<label className="form-control w-3/5 md:w-full md:max-w-md">
 				<div className="label">
 					<span className="label-text">Degree</span>
 				</div>
@@ -36,7 +36,7 @@ export default function Home() {
 				</select>
 			</label>
 
-			<label className="form-control w-3/5 md:w-full md:max-w-xs">
+			<label className="form-control w-3/5 md:w-full md:max-w-md">
 				<div className="label">
 					<span className="label-text">Course</span>
 				</div>
