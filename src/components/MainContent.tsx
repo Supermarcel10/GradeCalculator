@@ -1,6 +1,6 @@
 "use client";
 
-import Modules from "./Modules";
+import Modules, {Module} from "./Modules";
 import React, {
 	useEffect,
 	useState
@@ -18,7 +18,7 @@ interface TabProps {
 	degree: string;
 	course: string;
 	year: number;
-	modules: any[]; // TODO: Replace with proper type later on
+	modules: Module[];
 }
 
 const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
@@ -75,8 +75,9 @@ const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
 					))}
 				</div>
 			</div>
+
 			{tabs.length > 0 && <div role="tabpanel" className="p-8 pb-0">
-				<Modules/>
+				<Modules modules={tabs[activeIndex].modules}/>
 			</div>}
 		</div>
 	);
