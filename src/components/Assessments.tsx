@@ -26,7 +26,7 @@ const Assessments: React.FC<AssessmentsProps> = ({ assessments }) => {
 				<div className="collapse bg-primary/10">
 					<input type="radio" name="assessment-accordion" />
 					<div className="collapse-title text-xl font-medium flex justify-between">
-						<span className="text-primary/80">T{assessment.term}</span> <span>{assessment.name}</span>
+						<p><span className="text-primary/80">T{assessment.term}</span> <span>{assessment.name}</span></p>
 						<p className={getMarkColor(assessment.mark)}>{assessment.mark}%</p>
 					</div>
 
