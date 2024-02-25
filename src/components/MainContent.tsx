@@ -60,26 +60,24 @@ const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
 	}, [university, degree, course]);
 
 	return (
-		<div className="px-16 flex justify-center">
-			<div role="tablist" className="gap-4 tabs tabs-bordered tabs-lg">
-				{tabs.map((tab, index) => (
-					<a
-						key={tab.year}
-						role="tab"
-						className={`tab ${index === activeIndex ? "tab-active " : ""}`}
-						onClick={() => setActiveIndex(index)}
-					>
-						Year {tab.year}
-					</a>
-				))}
-
-				{/*TODO: Fix this not rendering properly.*/}
-				{/*role="tabpanel" className="tab-content"*/}
-				{tabs.length > 0 && <div >
-					<h1 className="text-primary text-lg">{tabs[activeIndex].year}</h1>
-					<GradeTable/>
-				</div>}
+		<div className="px-8">
+			<div className="px-16 flex justify-center">
+				<div role="tablist" className="gap-4 tabs tabs-bordered tabs-lg">
+					{tabs.map((tab, index) => (
+						<a
+							key={tab.year}
+							role="tab"
+							className={`tab ${index === activeIndex ? "tab-active " : ""}`}
+							onClick={() => setActiveIndex(index)}
+						>
+							Year {tab.year}
+						</a>
+					))}
+				</div>
 			</div>
+			{tabs.length > 0 && <div role="tabpanel" className="p-8 pb-0">
+				<GradeTable/>
+			</div>}
 		</div>
 	);
 };
