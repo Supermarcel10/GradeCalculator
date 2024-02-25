@@ -25,10 +25,29 @@ export interface Quiz {
 	mark: number | null;
 }
 
+function colorIfFailed(mark: number): string {
+	if (mark < 40) {
+		return "text-red-500";
+	}
+	return "";
+}
+
+export function getMarkColor(mark: number): string {
+	if (mark >= 70) {
+		return "text-green-500";
+	} else if (mark >= 60) {
+		return "text-yellow-500";
+	} else if (mark >= 40) {
+		return "text-orange-500";
+	} else {
+		return "text-red-500";
+	}
+}
+
 const Modules: React.FC<ModulesProps> = ({ modules }) => {
 	const remappedModules = modules.map(module => ({
 		...module,
-		totalMark: 0
+		totalMark: 100
 	}));
 
 	return (
@@ -38,10 +57,9 @@ const Modules: React.FC<ModulesProps> = ({ modules }) => {
 					<div key={module.id} className="collapse bg-base-200">
 						<input type="radio" name="my-accordion-1" />
 						<div className="collapse-title text-xl font-medium flex justify-between">
-							<p><span className="text-accent/40">{module.id}</span> <span className="font-bold">{module.name}</span></p>
+							<p><span className="text-accent/40">{module.id}</span> <span className={`font-bold ` + colorIfFailed(module.totalMark)}>{module.name}</span></p>
 							{/*TODO: Calculate the percentage of completed assessments*/}
-							{/*TODO: Add colouring based on percentage*/}
-							<p>{module.totalMark}%</p>
+							<p className={getMarkColor(module.totalMark)}>{module.totalMark}%</p>
 						</div>
 						<div className="collapse-content">
 							{/*	TODO: Add content*/}
