@@ -1,3 +1,4 @@
+import Assesments from "@/components/Assessments";
 import React from "react";
 
 
@@ -16,6 +17,7 @@ export interface Assessment {
 	name: string;
 	weight?: number;
 	mark: number | null;
+	term: number;
 	quizzes?: Quiz[];
 }
 
@@ -73,7 +75,7 @@ const Modules: React.FC<ModulesProps> = ({ modules }) => {
 							<p className={getMarkColor(module.totalMark)}>{module.totalMark}%</p>
 						</div>
 						<div className="collapse-content">
-							{/*	TODO: Add content*/}
+							<Assesments assessments={module.assessments} />
 						</div>
 					</div>
 				))}
