@@ -1,4 +1,4 @@
-export default function GradeTable() {
+export default function Modules() {
 	return (
 	<div>
 		<div className="flex flex-col px-8 gap-2">

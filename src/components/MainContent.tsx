@@ -1,6 +1,6 @@
 "use client";
 
-import GradeTable from "@/components/GradeTable";
+import Modules from "./Modules";
 import React, {
 	useEffect,
 	useState
@@ -76,7 +76,7 @@ const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
 				</div>
 			</div>
 			{tabs.length > 0 && <div role="tabpanel" className="p-8 pb-0">
-				<GradeTable/>
+				<Modules/>
 			</div>}
 		</div>
 	);
