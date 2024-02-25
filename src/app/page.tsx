@@ -21,7 +21,8 @@ export default function Home() {
 				</div>
 				<select className="select select-bordered" value={university} onChange={(e) => setUniversity(e.target.value)}>
 					<option disabled>None</option>
-					<option>City University of London</option>
+					{/*TODO: Add universities from the YAML stores*/}
+					<option>City St George's University of London</option>
 				</select>
 			</label>
 
