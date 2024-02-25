@@ -45,10 +45,21 @@ export function getMarkColor(mark: number): string {
 }
 
 const Modules: React.FC<ModulesProps> = ({ modules }) => {
-	const remappedModules = modules.map(module => ({
-		...module,
-		totalMark: 100
-	}));
+	const remappedModules = modules.map(module => {
+		const assessments = module.assessments.flatMap(assessment => (
+			Object.values(assessment)[0].map((a: Assessment) => ({
+				...a,
+				term: parseInt(Object.keys(assessment)[0].split(" ")[1]), // Assign term to assessment
+				mark: a.mark || 0 // Default mark of 0 if null
+			}))
+		));
+
+		return {
+			...module,
+			totalMark: 100,
+			assessments: assessments.sort((a, b) => a.term - b.term) // Sort ascending by term
+		};
+	});
 
 	return (
 		<>
