@@ -10,7 +10,7 @@ const Assessments: React.FC<AssessmentsProps> = ({ assessments }) => {
 	const remappedAssessments = assessments.map(assessment => {
 		const quizzes = assessment.quizzes || [];
 		const weight = assessment.weight || quizzes.reduce((acc, quiz) => acc + (quiz.weight || 0), 0);
-		const mark = assessment.mark || quizzes.reduce((acc, quiz) => acc + (quiz.mark || 0), 0);
+		const mark = assessment.mark || quizzes.reduce((acc, quiz) => acc + (quiz.mark || 0), 0); {/*TODO: Double check if calculation works as expected*/}
 
 		return {
 			...assessment,
