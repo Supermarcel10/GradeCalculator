@@ -25,9 +25,13 @@ const Assessments: React.FC<AssessmentsProps> = ({ assessments }) => {
 			{remappedAssessments.map((assessment, index) => (
 				<div className="collapse bg-primary/10">
 					<input type="radio" name="assessment-accordion" disabled={assessment.quizzes.length === 0} style={{cursor: assessment.quizzes.length === 0 ? "default" : "pointer"}} />
-					<div className="collapse-title text-xl font-medium flex justify-between">
-						<p><span className="text-primary/80">T{assessment.term}</span> <span>{assessment.name}</span></p>
-						<p className={getMarkColor(assessment.mark)}>{assessment.mark}%</p>
+					<div className="collapse-title font-medium flex justify-between">
+						<p className="text-lg my-auto"><span className="text-primary/80">T{assessment.term}</span> <span>{assessment.name}</span></p>
+
+						{assessment.quizzes.length > 0 ?
+						 <p className={getMarkColor(assessment.mark)}>{assessment.mark}%</p>
+						 : <input type="text" placeholder="0" className="input input-bordered input-sm bg-accent/20 text-sm z-10 text-center" style={{width: '6ch'}} maxLength={3} />
+						}
 					</div>
 
 					<div className="collapse-content">
