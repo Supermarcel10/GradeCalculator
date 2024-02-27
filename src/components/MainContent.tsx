@@ -60,7 +60,7 @@ const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
 	}, [university, degree, course]);
 
 	return (
-		<div className="px-8">
+		<div className="px-4 lg:px-8">
 			<div className="px-16 flex justify-center">
 				<div role="tablist" className="gap-4 tabs tabs-bordered tabs-lg">
 					{tabs.map((tab, index) => (
@@ -76,7 +76,7 @@ const Tabs: React.FC<InputProps> = ({university, degree, course}) => {
 				</div>
 			</div>
 
-			{tabs.length > 0 && <div role="tabpanel" className="p-8 pb-0">
+			{tabs.length > 0 && <div role="tabpanel" className="pt-12 mx-auto w-full xl:w-3/4 2xl:w-5/7 3xl:">
 				<Modules modules={tabs[activeIndex].modules}/>
 			</div>}
 		</div>

@@ -65,14 +65,14 @@ const Modules: React.FC<ModulesProps> = ({ modules }) => {
 
 	return (
 		<>
-			<div className="flex flex-col px-8 gap-2">
+			<div className="flex flex-col md:px-8 gap-2">
 				{remappedModules.map((module) => (
 					<div key={module.id} className="collapse bg-base-200">
 						<input type="radio" name="module-accordion" />
-						<div className="collapse-title text-xl font-medium flex justify-between">
-							<p><span className="text-accent/40">{module.id}</span> <span className={`font-bold ` + colorIfFailed(module.totalMark)}>{module.name}</span></p>
+						<div className="collapse-title text-xl flex justify-between">
+							<h2><span className="text-accent/40">{module.id}</span> <span className={"font-medium " + colorIfFailed(module.totalMark)}>{module.name}</span></h2>
 							{/*TODO: Calculate the percentage of completed assessments*/}
-							<p className={getMarkColor(module.totalMark)}>{module.totalMark}%</p>
+							<h2 className={getMarkColor(module.totalMark)}>{module.totalMark}%</h2>
 						</div>
 						<div className="collapse-content">
 							<Assesments assessments={module.assessments} />
