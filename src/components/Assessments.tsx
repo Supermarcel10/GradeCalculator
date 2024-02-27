@@ -34,9 +34,9 @@ const Assessments: React.FC<AssessmentsProps> = ({ assessments }) => {
 						}
 					</div>
 
-					<div className="collapse-content">
+					{assessment.quizzes.length > 0 && <div className="collapse-content">
 						<p>{assessment.quizzes.length}</p>
-					</div>
+					</div>}
 				</div>
 			))}
 		</div>
