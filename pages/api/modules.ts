@@ -77,8 +77,6 @@ async function fetchAndProcessYaml(university : string, degree : string, course 
 			const content = fs.readFileSync(filePath, "utf-8");
 			const data : ModuleData = yaml.load(content) as ModuleData;
 
-			console.log(data.university, university, data.degree, degree, data.course, course);
-
 			if (data.university === university && data.degree === degree && data.course === course) {
 				moduleData[data.year] = data.modules;
 			}
