@@ -1,5 +1,6 @@
+import {getMarkColor} from "@/utils/coloring";
 import React from 'react';
-import {Assessment, getMarkColor} from "./Modules";
+import {Assessment} from "./Modules";
 
 
 interface AssessmentsProps {
