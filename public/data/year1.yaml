@@ -2,6 +2,7 @@ university: "City St George's University of London"
 degree: "BSc"
 course: "Computer Science"
 year: 1
+contributes: 0
 modules:
   - id: "IN1002"
     name: "Introduction to Algorithms"

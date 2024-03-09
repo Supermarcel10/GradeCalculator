@@ -2,6 +2,7 @@ university: "City St George's University of London"
 degree: "BSc"
 course: "Computer Science"
 year: 2
+contributes: 40
 modules:
   - id: "IN2002"
     name: "Data Structures and Algorithms"
