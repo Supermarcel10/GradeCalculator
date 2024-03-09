@@ -1,6 +1,7 @@
 "use client";
 
 import MainContent from "@/components/MainContent";
+import TotalContribution from "@/components/TotalContribution";
 import React, {useState} from "react";
 
 
@@ -48,6 +49,8 @@ export default function Home() {
 		</div>
 
 		<MainContent course={course == "None" ? null : course} degree={degree == "None" ? null : degree} university={university == "None" ? null : university}/>
+
+		<TotalContribution/>
 	</div>
   );
 }
