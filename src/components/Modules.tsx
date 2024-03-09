@@ -1,4 +1,5 @@
 import Assesments from "@/components/Assessments";
+import {colorIfFailed, getMarkColor} from "@/utils/coloring";
 import React from "react";
 
 
@@ -25,25 +26,6 @@ export interface Quiz {
 	name: string;
 	weight?: number;
 	mark: number | null;
-}
-
-function colorIfFailed(mark: number): string {
-	if (mark < 40) {
-		return "text-red-500";
-	}
-	return "";
-}
-
-export function getMarkColor(mark: number): string {
-	if (mark >= 70) {
-		return "text-green-500";
-	} else if (mark >= 60) {
-		return "text-yellow-500";
-	} else if (mark >= 40) {
-		return "text-orange-500";
-	} else {
-		return "text-red-500";
-	}
 }
 
 const Modules: React.FC<ModulesProps> = ({ modules }) => {
