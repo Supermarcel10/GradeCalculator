@@ -61,3 +61,62 @@ modules:
         - name: "Exam"
           weight: 70
           mark: null
+  - id: "IN2033"
+    name: "Team Project"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Inter-Group Services"
+          weight: 15
+          mark: null
+        - name: "Personal Diary"
+          weight: 5
+          mark: null
+        - name: "Personal Diary"
+          weight: 5
+          mark: null
+        - name: "Demo & Code Submission"
+          weight: 40
+          mark: null
+        - name: "Report"
+          weight: 20
+          mark: null
+        - name: "Individual Report"
+          weight: 15
+          mark: null
+  - id: "IN2009"
+    name: "Language Processors"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Coursework 1"
+          weight: 25
+          mark: null
+        - name: "Coursework 2"
+          weight: 25
+          mark: null
+        - name: "Exam"
+          weight: 25
+          mark: null
+  - id: "IN2011"
+    name: "Computer Networks"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Coursework 1"
+          weight: 50
+          mark: null
+        - name: "Coursework 2"
+          weight: 50
+          mark: null
+  - id: "IN2032"
+    name: "Cloud Technology for Business Transformation"
+    credits: 15
+    assessments:
+      - term 2:
+        - name: "Group Presentation"
+          weight: 50
+          mark: null
+        - name: "Individual Report"
+          weight: 50
+          mark: null
